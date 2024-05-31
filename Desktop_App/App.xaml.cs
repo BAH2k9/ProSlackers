@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using Desktop_App.MVVM.ViewModels;
+using System.Configuration;
 using System.Data;
 using System.Windows;
 
@@ -9,6 +10,22 @@ namespace Desktop_App
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            var mainWindow = new MainWindow();
+
+            var knowledgeViewModel = new KnowledgeViewModel();
+            var guideViewModel = new GuideViewModel();
+            var linksViewModel = new LinksViewModel();
+
+            var homeViewModel = new HomeViewModel(knowledgeViewModel,guideViewModel,linksViewModel);
+
+            mainWindow.DataContext = homeViewModel;
+
+            mainWindow.Show();
+        }
     }
 
 }
