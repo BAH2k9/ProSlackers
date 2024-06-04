@@ -7,12 +7,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel>
-                <TextBlock Text="Knowledge!" FontSize="100"/>
-                <TextBlock Text="Knowledge!" FontSize="100"/>
-                <TextBlock Text="Knowledge!" FontSize="100"/>
-                <TextBlock Text="Knowledge!" FontSize="100"/>
+                <TextBlock FontSize="50" Margin="10" HorizontalAlignment="Center">
+                    What is Slacklining?
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Margin="20" FontSize="20">
+                    Slacklining entails balancing on a 2.5 to 5 centimetre wide piece of webbing made from synthetic fibres, which is rigged between to fixed points (most commonly trees). Slacklining is an independent sport with many variations and disciplines, championships and professional athletes.
+                    Slacklines are also used as a balance training aid in competitive sports, as fitness equipment or in physiotherapy. The activity also has creative aspects, with a tradition in performances and shows and as a tool for enriching public spaces. Furthermore, it is gaining a foothold in school sports, tourism and as a recreational activity in the public’s free time, which is partly due to slackline parks. 
+                    A slackline set basically consists of a piece of webbing (not a rope), two tree slings and a tensioning system – if the slackline is to be rigged between two trees, the set should also include tree protectors.
+                </TextBlock>
+                
             </StackPanel>
             
         </ScrollViewer>
